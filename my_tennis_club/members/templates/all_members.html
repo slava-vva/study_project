@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>All Members</title>
+</head>
+<body>
+    <h1>All Members</h1>
+    <ul>
+        {% for member in members %}
+            <li><a href="details/{{member.id}}">{{ member.name }} - {{ member.email }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
